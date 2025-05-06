@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thapelo Makgakga's Interactive Playground</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>Thapelo Makgakga's Interactive Playground 🎮</h1>
+    <p>Explore the magic of JavaScript and dynamic design!</p>
+  </header>
+
+  <section class="actions">
+    <button id="changeTextBtn" class="styled-button">Click Me 🎉</button>
+    <button id="secretBtn" class="styled-button">Double-Click Me 🤫</button>
+    <p id="output">👋 Waiting for your action...</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Image Gallery</h2>
+    <div class="image-container">
+      <img src="https://via.placeholder.com/300" alt="Gallery Image" id="galleryImage"/>
+      <p>Hover over the image!</p>
+    </div>
+  </section>
+
+  <section class="tabs">
+    <h2>Explore More!</h2>
+    <div class="tab-container">
+      <button class="tab" data-content="tab1">About Me</button>
+      <button class="tab" data-content="tab2">Projects</button>
+      <div class="tab-content" id="tab1">
+        I’m Thapelo, a developer passionate about building impactful tech solutions.
+      </div>
+      <div class="tab-content" id="tab2" style="display: none;">
+        My key projects include <strong>Cheaply</strong>, <strong>Weatherly</strong>, and <strong>Liftly</strong>.
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Contact Me 📝</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required class="input-field"/>
+      <input type="email" id="email" placeholder="Your Email" required class="input-field"/>
+      <input type="password" id="password" placeholder="Password (min 8 chars)" required class="input-field"/>
+      <button type="submit" class="submit-button">Submit</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
